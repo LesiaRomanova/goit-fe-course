@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before
+::after {
+    box-sizing: inherit;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+@font-face  {
+
+    font-family : "Playfair-Display";
+        src: url(../fonts/PlayfairDisplay-Regular.ttf) format("truetype");
+    font-wight :normal;
+    Font-style :normal;
+
+
+}
+
+@font-face  {
+
+    font-family : "Ubuntu";
+    src: url(../fonts/Ubuntu-Light.ttf) format('truetype');
+    font-wight :300;
+    Font-style :normal;
+}
+
+
+body {
+
+    font-family : "Playfair-Display";
+    font-size: 14px;
+    line-height: ;
+}
+#wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+
+ul, ol {
+    list-style: nome;
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    padding: 74px 0;
+}
+.nav-list {
+    text-align: center;
+
+}
+.nav-item {
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+.nav-item + .nav-item {
+    padding-left: 15px;
+}
+.nav-link {
+    color: inherit;
+}
+
+.nav-link :hover
+.nav-link :focus
+.nav-link :active{
+    color: #03a9f4;
+}
+.cards  {
+   letter-spacing: -.34em;
+   margin: 0 --30px;
+}
+.card {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50;
+    padding: 0 30px 30px;
+    letter-spacing: 0;
+}
+.card a{
+    color: #b4ad9e;
+    text-transform: uppercase;
+
+}
+
+.card .catego
+.card h2 {
+    font-size: 30px;
+    margin: 30pz 0;
+}
+.card h2 a {
+    color: inherit;
+}
+.nav-item + .nav-item {
+    padding-left: 15px;
+}

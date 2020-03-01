@@ -8,105 +8,73 @@ html {
     box-sizing: inherit;
 }
 
-a {
-
-    text-decoration: none;
+body, p, button {
+    font-family: "Playfair Display",serif;
+    font-style: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #626262;
 }
 
-@font-face  {
-
-    font-family : "Playfair-Display";
-        src: url(../fonts/PlayfairDisplay-Regular.ttf) format("truetype");
-    font-wight :normal;
-    Font-style :normal;
-
-
-}
-
-@font-face  {
-
-    font-family : "Ubuntu";
-    src: url(../fonts/Ubuntu-Light.ttf) format('truetype');
-    font-wight :300;
-    Font-style :normal;
-}
-
-
-body {
-
-    font-family : "Playfair-Display";
-    font-size: 14px;
-    line-height: ;
-}
-#wrapper {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.container {
-    max-width: 930px;
+.wrapper {
+    width: 900px;
     margin: 0 auto;
-    padding: 0 15px;
-
 }
-
-
-ul, ol {
-    list-style: nome;
-    padding: 0;
-    margin: 0;
-}
-
-#header {
-    padding: 74px 0;
-}
-.nav-list {
+.nav-list ul {
     text-align: center;
-
 }
-.nav-item {
+.nav-list li {
     display: inline-block;
-    vertical-align: middle;
-    
+    margin-top: 75px;
+    margin-right: 100px;
+    margin-bottom: 100px;
 }
-.nav-item + .nav-item {
-    padding-left: 15px;
+.nav-list li:last-child {
+    margin-right: 0;
 }
-.nav-link {
-    color: inherit;
+.nav-list li a {
+    text-transform: uppercase;
 }
-
-.nav-link :hover
-.nav-link :focus
-.nav-link :active{
+.nav-list li a:hover {
     color: #03a9f4;
 }
-.cards  {
-   letter-spacing: -.34em;
-   margin: 0 --30px;
+.cards-wrap {
+font-size: 0;
+
 }
 .card {
     display: inline-block;
-    vertical-align: middle;
-    width: 50;
-    padding: 0 30px 30px;
-    letter-spacing: 0;
+    width: 420px;
+    font-size: 14px;
+    margin-right: 60px;
+    margin-bottom: 130px;
 }
-.card a{
-    color: #b4ad9e;
+.card:nth-child(even) {
+    margin-right: 0;
+}
+.card img{
+    display: block;
+    width: 100;
+    height: auto;
+}
+.card .category {
+    font: 300 14px "Ulbuntu", sant-sarif;
     text-transform: uppercase;
+    color: #b4ad9e;
+    margin-top: 26px;
+    margin-bottom: 30px;
+}
+.card h3 {
+    font-size: 35px;
+    margin-bottom: 35px;
 
 }
+.btn-more {
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 20px 35px;
+    margin-bottom: 75px;
 
-.card .catego
-.card h2 {
-    font-size: 30px;
-    margin: 30pz 0;
-}
-.card h2 a {
-    color: inherit;
-}
-.nav-item + .nav-item {
-    padding-left: 15px;
 }

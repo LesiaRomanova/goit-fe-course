@@ -1,4 +1,4 @@
-html {
+/*html {
     box-sizing: border-box;
 }
 
@@ -6,7 +6,7 @@ html {
 ::before
 ::after {
     box-sizing: inherit;
-}
+}*/
 
 body, p, button {
     font-family: "Playfair Display",serif;
@@ -34,6 +34,7 @@ body, p, button {
 }
 .nav-list li a {
     text-transform: uppercase;
+    text-decoration: none;
 }
 .nav-list li a:hover {
     color: #03a9f4;
@@ -52,13 +53,16 @@ font-size: 0;
 .card:nth-child(even) {
     margin-right: 0;
 }
-.card img{
+.card:nth-child(-n+2) {
+    margin-bottom: 55px;
+}
+.card img {
     display: block;
-    width: 100;
+    width: 100%;
     height: auto;
 }
 .card .category {
-    font: 300 14px "Ulbuntu", sant-sarif;
+    font: 300 14px "Ulbuntu", sans-serif;
     text-transform: uppercase;
     color: #b4ad9e;
     margin-top: 26px;
@@ -71,7 +75,7 @@ font-size: 0;
 }
 .btn-more {
     display: block;
-    margin: auto;
+    margin: 0 auto;
     font-size: 20px;
     border: 1px solid;
     padding: 20px 35px;

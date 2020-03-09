@@ -22,6 +22,7 @@ body, p, button {
 }
 .nav-list ul {
     text-align: center;
+    
 }
 .nav-list li {
     display: inline-block;
@@ -35,6 +36,7 @@ body, p, button {
 .nav-list li a {
     text-transform: uppercase;
     text-decoration: none;
+    color: #949494;
 }
 .nav-list li a:hover {
     color: #03a9f4;
@@ -68,8 +70,8 @@ font-size: 0;
     margin-top: 26px;
     margin-bottom: 30px;
 }
-.card h3 {
-    font-size: 35px;
+.card h2 {
+    font-size: 24px;
     margin-bottom: 35px;
 
 }

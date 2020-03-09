@@ -1,4 +1,4 @@
-* {
+/* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,82 +11,4 @@
     align-items: center;
     flex-direction: column;
 
-}
-.btn {
-    font-size: 30px;
-    line-height: 1;
-    border: 2px solid #000;
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #000;
-
-}
-
-.btn:before {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    vertical-align: middle;
-    height: 10px;
-    width: 10px;
-    /*margin-right: 10px;*/
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    color: blue;
-    background:black;
-
-}
-.btn::after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    vertical-align: middle;
-    height: 10px;
-    width: 10px;
-   /* margin-right: 10px;*/
-    top: 50%;
-    right:  10px;
-    transform: translateY(-50%);
-    color: blue;
-    background: black;
-}
-
-.btn:first-letter {
-    text-transform: uppercase;
-    color: red;
-    font-size: 50px;
-    font-weight: bold;
-    font-style: italic;
-}
-p::first-line {
-    font-style: italic;
-    color: red;
-    font-size: 18px;
-}
-ul a {
-    color: inherit;
-}
-ul li:first-child  {
-    color: red;
-
-}
-ul li:nth-child(odd) {
-    font-weight: bold;
-}
-ul li:nth-child(even) {
-    font-size: 20pz;
-}
-ul li:nth-child(n + 5) a {
-    text-decoration: none;
-}
-ul li:nth-child(-n +5) {
-    color: seagreen;
-}
-
-ul li:not(:first-child) {
-    font-style: italic;
 }

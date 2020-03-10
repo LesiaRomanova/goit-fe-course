@@ -246,9 +246,7 @@ legend {
   white-space: normal; /* 1 */
 }
 
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
+
 
 progress {
   vertical-align: baseline;
@@ -345,4 +343,4 @@ template {
  */
 
 [hidden] {
-  display: none;
+  display: none;}

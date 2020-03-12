@@ -36,10 +36,16 @@ body, p, button {
 .nav-list li a {
     text-transform: uppercase;
     text-decoration: none;
-    color: #949494;
+    color: <li class="submenu-item">
+    <a href="#">submenu-item</a>
+</li>;
 }
 .nav-list li a:hover {
     color: #03a9f4;
+}
+
+main {
+    padding-bottom: 75px;
 }
 .cards-wrap {
 font-size: 0;
@@ -69,6 +75,7 @@ font-size: 0;
     color: #b4ad9e;
     margin-top: 26px;
     margin-bottom: 30px;
+    
 }
 .card h2 {
     font-size: 24px;

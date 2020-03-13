@@ -36,9 +36,7 @@ body, p, button {
 .nav-list li a {
     text-transform: uppercase;
     text-decoration: none;
-    color: <li class="submenu-item">
-    <a href="#">submenu-item</a>
-</li>;
+    color: #626262;
 }
 .nav-list li a:hover {
     color: #03a9f4;

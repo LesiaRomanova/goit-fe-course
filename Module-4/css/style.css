@@ -1,9 +1,10 @@
-html {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-*,
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+
 *::before,
 *::after {
   box-sizing: inherit;
@@ -219,4 +220,5 @@ ol {
   text-decoration: none;
   color: inherit;
   line-height: 50px;
+  
 }

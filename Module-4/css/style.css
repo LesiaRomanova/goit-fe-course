@@ -13,47 +13,50 @@
 li,
 ol {
   list-style: none;
+  
+}
+.nav-list {
+  float: right;
 }
 .nav-list li {
-  float: right;
+  float: left;
   list-style: none;
   margin-right: 40px;
   padding-top: 30px;
 }
-.nav-list li:first-child {
+
+.nav-list li:last-child {
   margin-right: 0px;
 }
 .nav-link {
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: #0f0101;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-.container {
+/*.container {
   float: right;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: black;
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
-}
+}*/
 .nav-item {
   vertical-align: middle;
   text-transform: uppercase;
 }
 .logo {
   float: left;
-  height: 60px;
   margin-bottom: 10px;
   margin-top: 20px;
-  vertical-align: bottom;
-  padding-left: 35px;
-
   font-family: "Roboto", sans-serif;
   font-size: 30px;
   font-weight: 300;
   text-transform: uppercase;
-  height: 60px;
   color: #555252;
 }
 .logo-link {
@@ -64,7 +67,7 @@ ol {
   color: #1abc9c;
   font-weight: bold;
 }
-.container :hover {
+.nav-link:hover {
   color: #1abc9c;
 }
 .wrapper {
@@ -81,6 +84,7 @@ ol {
 .head {
   text-transform: uppercase;
   text-align: center;
+  margin-top: 100px;
   margin-bottom: 30px;
   font-family: "Roboto", sans-serif;
   font-size: 48px;
@@ -101,23 +105,32 @@ ol {
 }
 .cards {
   padding-bottom: 30px;
+  
 }
 .card-list {
   margin: 0 -15px;
   overflow: hidden;
+  
 }
 .card {
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
   width: 255px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: #fff;
 }
 .card-list .card:nth-child(4n + 4) {
   margin-right: 0;
 }
+.card:hover .card-footer {
+  background: #1abc9c;
+}
 .card-img {
   background: #e9f0fd;
-  height: 280px;
   position: relative;
 }
 .card img img {
@@ -154,13 +167,7 @@ ol {
   max-width: 100%;
   display: block;
 }
-.card-item {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 18px;
-  color: #fff;
-}
+
 .card-item:hover .card-footer {
   background: #1abc9c;
 }
@@ -182,27 +189,27 @@ ol {
   color: #555252;
   height: 60px;
   margin-top: 20px;
-  padding-left: 35px;
   vertical-align: bottom;
   text-decoration: none;
 }
 
+
 .block-title::after {
-  display: block;
-  margin: 0 auto;
   content: "";
-  background-color: #1abc9c;
-  width: 160px;
-  height: 5px;
+  background-color: #1abc9c ;
+  display: block;
+  height: 7px;
+  width:165px ;
+
   margin-left: 0;
   margin-right: auto;
-  margin-bottom: 30px;
-  margin-top: 15px;
+
+  margin-top: 10px;
 }
 .block-img {
   margin-bottom: 20px;
 }
-.btn {
+/*.btn {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -214,11 +221,23 @@ ol {
   margin-left: 0;
   margin-right: auto;
   text-align: center;
-}
+}*/
 .btn-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: #ffff;background: #4ec6ab;
   line-height: 50px;
-  
+  font-weight: 300;
+  height: 50px;
+  width: 160px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-left: 0;
+  text-align: center;  
+}
+.block-title-link {
+  text-decoration: none;
+  color: inherit;
 }

@@ -1,53 +1,310 @@
-html {
+* {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+*::before,
+*::after {
+  box-sizing: inherit;
 }
-*,
-*:before
-*:after {
-    box-sizing: inherit;
-}
-body {
-    margin: 0;
-}
-ul {
+li,ol {
     list-style: none;
-    padding: 0;
+}
+.wrapper {
+position: relative;
+overflow: hidden;
+width: 100%;
+}
+.contenier {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+.nav-list {
+    float: right;
+}
+.nav-list li {
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+.nav-list li:last-child {
+    margin-right: 0;
+}
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 11px;
+    font-weight: bold;
+    color: #0f0101;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.nav-item {
+    text-decoration: none;
+    vertical-align: middle;
+}
+.nav-link:hover {
+    color: #1abc9c;
+}
+.logo {
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.logo-link {
+    text-decoration: none;
+    color: #555252;
+}
+.logo::first-letter {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+.slider {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    
+}
+.name-slider {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    
+}
+.head {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 900;
     margin: 0;
 }
-#header {
-    padding: 40px 15px;
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: lighter;
 }
+.btn-left {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  transform: translatey(-80%);
+  background-color: #4ec6ab;
+  opacity: 0.651;
+  border: none;
+  font-size: 100px;
+  color: #ffff;
+ 
+}
+.btn-right {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    right: 18%;
+    transform: translateY(-80%);
+    background-color: #4ec6ab;
+    opacity: 0.651;
+    border: none;
+    font-size: 100px;
+    color: #ffffff;
+  
+  }
+.btn-left:hover {
+    background-color:  #1abc9c;
+}
+.btn-right:hover {
+    background-color:  #1abc9c;
+}
+.header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #515151;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 100px;
+}
+.header::after {
+    display: block;
+    margin: 0 auto;
+    content: "";
+    height: 7px;
+    width: 160px;
+    background-color: #1abc9c;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 30px;
 
 }
-.menu {
-
+.cards {
+    background-color: rgb( 233, 240, 253 );
+    
 }
-.menu-item {
+.card {
     float: left;
     position: relative;
-}
-.menu-item + .menu-item {
-    margin-left: 20px;
-}
-.menu-item a {
+    width: 255px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    color: #000;
+    font-size: 18px;
+    font-weight: 900;
+    color: #ffff;
 }
-.menu-item:hover .submenu {
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+.card:hover .overlay {
+    z-index: 1;
+}
+.card-list .card:last-child {
+    margin-right: 0;
+}
+.card:hover .card-footer,
+.card:hover .card-price {
+    background: #1abc9c;
+  }
+.card img img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.card-footer {
+    line-height: 40px;
+    color: #ffff;
+    background: #323232;
+}
+.card-name {
+    float: left;
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-right: auto;
+}
+.card-name-link {
+    text-decoration: none;
+    color: #ffff;
+}
+.card-price {
+    float: right;
+    width: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    background-color: #8c8c8c;
+}
+img {
+    height: auto;
+    max-width: 100%;
     display: block;
+}
+.card-name:hover .card-footer {
+    background: #1abc9c;
+}
+.overlay-icons {
+    position: relative;
+    width: 164px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border: none;
+    background-color: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+   
+.overlay-icon {
+    width: 51px;
+    height: 52px;
+    font-size: 40px;
+    border: 1px solid #ffffff;
+    background-color: initial;
+    color: #ffffff;
+} 
+.overlay-card {
+    width: 162px;
+    height: 48px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    border: 1px solid #ffffff;
+    background-color: #323232;
+    color: #ffffff;
+    /* font-weight: 400; */
+    text-transform: uppercase;
+}
+.overlay-card i {
+    font-size: 30px;
+    padding: 7px 10px;
+}
+.overlay-icon:hover {
+    background: #1abc9c;
+}
+.overlay-card:hover {
+    background: #1abc9c;
+}
+#footer {
+    background-color: #555252;
+    height: 90px;
+}
+.avtor {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 28px;
+
 
 }
-.submenu {
-    display: none;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 6px;
-    background: yellow;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 400px;
+.avtor-docan {
+    text-align: center;
+    padding: 40px;
 }
-.submenu-item + .submenu-item {
-    padding-top: 10px;
+.avtor-docan a {
+    text-decoration: none;
+    color: #ffffff;
 }
+.avtor-docan:hover {
+    color: #1abc9c;
+}
+  

@@ -25,11 +25,11 @@ width: 100%;
     content: "";
     clear: both;
 }
-.nav-list {
+/* .nav-list {
     float: right;
-}
+} */
 .nav-list li {
-    float: left;
+   
     list-style: none;
     margin-right: 30px;
     margin-top: 40px;
@@ -46,7 +46,11 @@ width: 100%;
     text-transform: uppercase;
     text-decoration: none;
 }
+#nav-menu {
+    float: right;
+}
 .nav-item {
+    float: left;
     text-decoration: none;
     vertical-align: middle;
 }

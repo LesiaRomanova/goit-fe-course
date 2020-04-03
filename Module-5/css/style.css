@@ -9,6 +9,7 @@
 }
 li,ol {
     list-style: none;
+    display: inline-block;
 }
 .wrapper {
 position: relative;
@@ -99,9 +100,12 @@ width: 100%;
     width: 50%;
     height: 50%;
     overflow: auto;
-    margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
-    
+    margin: 0;
+    top: 36%;
+    left: 30%;
+    bottom: 0;
+    right: 0;
+    /* transform: translate(20%); */
 }
 .head {
     font-family: 'Roboto', sans-serif;
@@ -122,14 +126,13 @@ p {
   width: 100px;
   position: absolute;
   top: 50%;
-  left: 18%;
+  left: 20%;
   transform: translatey(-80%);
   background-color: #4ec6ab;
   opacity: 0.651;
   border: none;
   font-size: 100px;
   color: #ffff;
- 
 }
 .btn-right {
     height: 100px;
@@ -137,14 +140,13 @@ p {
     position: absolute;
     right: 0;
     top: 50%;
-    right: 18%;
+    right: 20%;
     transform: translateY(-80%);
     background-color: #4ec6ab;
     opacity: 0.651;
     border: none;
     font-size: 100px;
     color: #ffffff;
-  
   }
 .btn-left:hover {
     background-color:  #1abc9c;
@@ -159,7 +161,7 @@ p {
     color: #515151;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     padding-top: 100px;
 }
 .header::after {
@@ -254,22 +256,42 @@ img {
     border: 1px solid #ffffff;
     color: #ffffff;
     border: none;
-    background-color: inherit;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
    
-.overlay-icon {
+.overlay-icon  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 51px;
     height: 52px;
     font-size: 40px;
     border: 1px solid #ffffff;
     background-color: initial;
     color: #ffffff;
+    
 } 
+ul {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+li,li {
+    margin: 2px;
+    font-size: 0;
+}
+li:nth-child(3n) {
+    margin-right: 0;
+
+}
+
+.overlay-icon li {
+    display: flex;
+}
 .overlay-card {
-    width: 162px;
+    width: 164px;
     height: 48px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -278,6 +300,8 @@ img {
     color: #ffffff;
     /* font-weight: 400; */
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
 }
 .overlay-card i {
     font-size: 30px;
@@ -301,14 +325,19 @@ img {
 
 }
 .avtor-docan {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    padding: 40px;
+    padding-top: 40px;
+    
 }
 .avtor-docan a {
     text-decoration: none;
-    color: #ffffff;
+    color: #1abc9c;
 }
-.avtor-docan:hover {
+.avtor-docan a:hover {
     color: #1abc9c;
 }
   

@@ -85,7 +85,10 @@ html {
   font-weight: 400;
   color: #333333;
 }
+
+
 .head-name {
+  display: block;
   margin-top: 25px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
@@ -223,7 +226,7 @@ html {
 .overlay-icon {
   height: 56px;
   width: 56px;
-  margin-right: 1px;
+  margin-right: 2px;
   background-color: #fce38a;
   display: flex;
   background-repeat: no-repeat;
@@ -321,4 +324,5 @@ html {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+  
 }

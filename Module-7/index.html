@@ -1,34 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-7</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div id="wrapper">
-        <header class="header">
-            <div class="container">
-                    <div class="logo"><a href="#" class="logo-link"></a>Golden</div>
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#" class="nav-link"></a>Home</li>
-                        <li class="nav-item"><a href="#" class="nav-link"></a>Services</li>
-                        <li class="nav-item"><a href="#" class="nav-link"></a>Portfolio</li>
-                        <li class="nav-item"><a href="#" class="nav-link"></a>About</li>
-                        <li class="nav-item"><a href="#" class="nav-link"></a>Contact</li>
-                    </ul>
-            </div>
-        </header>
-    </div>
-    <main id="main">
+      <header class="header">
+        <div class="container">
+          <nav id="nav-menu">
+            <div class="logo"><a href="#" class="logo-link">Golden</a></div>
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main id="main">
         <section class="services">
-            <div class="title-services">
-                <h2 class="title">Services<span class="sub-title"></span></h2>
+          <div class="container">
+            <header class="title-services">
+              <h2>
+                Services
+                <span class="sub-title"
+                  >Proin iaculis purus consequat sem cure.
+                </span>
+              </h2>
+            </header>
+            <div class="services-list">
+              <div class="services-list-item icon-basket">
+                <h4>E-Commerce</h4>
+                <p class="description">
+                  Proin iaculis purus consequat sem cure digni ssim. Donec
+                  porttitora entum suscipit aenean rhoncus posuere odio in
+                  tincidunt.
+                </p>
+              </div>
+              <div class="services-list-item icon-laptop">
+                <h4>Responsive Web</h4>
+                <p class="description">
+                  Proin iaculis purus consequat sem cure digni ssim. Donec
+                  porttitora entum suscipit aenean rhoncus posuere odio in
+                  tincidunt.
+                </p>
+              </div>
+              <div class="services-list-item icon-locked">
+                <h4>Web Security</h4>
+                <p class="description">
+                  Proin iaculis purus consequat sem cure digni ssim. Donec
+                  porttitora entum suscipit aenean rhoncus posuere odio in
+                  tincidunt.
+                </p>
+              </div>
             </div>
+          </div>
         </section>
-    </main>
-    
-</body>
+        <section class="contact-us">
+          <div class="container">
+            <header class="title-contact-us">
+              <h2>
+                Contact us
+                <span class="sub-title"
+                  >Proin iaculis purus consequat sem cure.
+                </span>
+              </h2>
+            </header>
+            <fieldset>
+              <form action="#">
+                <div class="row">
+                  <div class="col">
+                    <input type="text" placeholder="your name *"/>
+                    <input type="email" placeholder="your e-mail *"/>
+                    <input type="text" placeholder="subject"/>
+                  </div>
+                  <div class="col">
+                    <textarea placeholder="your message *"></textarea>
+                  </div>
+                </div>
+                <div class="btn">
+                  <button type="submit">subject field</button>
+                </div>
+              </form>
+            </fieldset>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,287 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:focus, /*убирает подсветку полей формы*/
+:visited {
+  outline: none;
+}
+#wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montsserat-Regular"),
+  url("fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff2") format("woff2"),
+  url("fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Regular"), local("Montsserat-Regular"),
+  url("fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff2") format("woff2"),
+  url("fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Slab"), local("Roboto-Slab"),
+  url("fonts/roboto-slab-v11-latin/roboto-slab-v11-latin-regular.woff2") format("woff2"),
+  url("fonts/roboto-slab-v11-latin/roboto-slab-v11-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "DroidSerifItalic";
+  font-style: italic;
+  font-weight: normal;
+  src: url(fonts/DroidSerif/DroidSerifItalic.eot);
+  src: url(fonts/DroidSerif/DroidSerifItalic.ttf), format("embedded-opentype"),
+  url("fonts/DroidSerif/DroidSerifItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "WisdomScriptAJ";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/WisdomScriptAJ/WisdomScriptAJ.woff") format("woff"),
+  url("fonts/WisdomScriptAJ/WisdomScriptAJ.ttf") format("truetype");
+}
+#nav-menu {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 485px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  list-style: none;
+  
+}
+.nav-item {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+.nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 41px;
+  color: black;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #fed136;
+}
+.logo {
+  font-family: "WisdomScriptAJ";
+  font-size: 26px;
+  line-height: 41px;
+  font-style: normal;
+  font-weight: normal;
+  
+}
+.logo-link {
+  text-decoration: none;
+  color: #fed136;
+}
+
+
+.title-services h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 130px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #222222;
+  text-transform: uppercase;
+}
+.sub-title {
+  margin-top: 25px;
+  margin-bottom: 75px;
+  display: block;
+  font-family: "DroidSerifItalic";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #777777;
+  text-transform: none;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+}
+.services-list-item {
+  
+  width: 290px;
+  margin-right: 35px;
+  padding: 0 5px;
+  text-align: center;
+}
+.services-list-item::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: 0 110px;
+  border: 3px solid #fed136;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.icon-basket::before {
+  background-image:url(../img/icon/Icon-Basket.png) ;
+}
+.icon-laptop::before {
+  background-image: url(../img/icon/Icon-Laptop.png);
+}
+.icon-locked::before {
+  background-image: url(../img/icon/Icon-Locked.png);
+}
+.services-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+.services-list-item h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #222222;
+
+}
+.description {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #777777;
+}
+.contact-us {
+  background-image: url(../img/slider2.png);
+  background-color: #222222;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 700px;
+
+}
+.title-contact-us h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 130px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+form,
+fieldset {
+  border-style: none;
+  margin: 0;
+  padding: 0;
+}
+fieldset {
+
+}
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  padding: 21px 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 100%;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #222222;
+  width: 100%;
+}
+/*input[type="name"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="submit"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #bbbbbb;
+}*/
+input::placeholder,
+textarea::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+textarea {
+  height: 210px;
+  resize: none;
+  overflow: auto;
+  vertical-align: top;
+}
+input:valid:not(:placeholder-shown) {
+  border-color: yellow;
+}
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col {
+  width: 50%;
+  padding: 0 15px;
+}
+ button {
+  border: none;
+  margin: 0 330px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 65px;
+  border-radius: 4px;
+  background-color: #fed136;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  
+}

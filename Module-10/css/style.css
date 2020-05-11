@@ -217,7 +217,7 @@ html {
     height: 40px;
     border: 2px solid #ffffff;
     text-align: center;
-    margin: 0 515px;
+    margin: 0 500px;
 }
 
 .title__head {
@@ -263,7 +263,7 @@ html {
 .servicer__item {
     position: relative;
     display: inline-block;
-    flex: 0 0 250px;
+    width: 370px;
     padding-left: 80px;
     padding-right: 50px;
     margin-bottom: 90px;

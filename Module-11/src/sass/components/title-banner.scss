@@ -1,0 +1,20 @@
+.title__head-banner{
+    font-family: $additional-font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 86px;
+    color: $primary-white-color;
+}
+.title__text-banner{
+    display: block;
+    font-family: $main-font-stack;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 140px;
+    color: $primary-white-color;
+    margin: 0 190px;
+    padding: 65px 0;
+    text-transform: uppercase;
+}

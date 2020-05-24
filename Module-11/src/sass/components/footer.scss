@@ -1,0 +1,17 @@
+.container__footer {
+    @include center-flex('ver');
+    justify-content: space-between;
+    border-top: 1px solid #e5e5e5;
+}
+.container__avtor {
+    font-family: $main-font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $primary-dark-color;
+}
+.word {
+    @extend %link;
+    color: #f38181;
+}

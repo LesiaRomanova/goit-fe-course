@@ -1,0 +1,103 @@
+.team {
+    margin-bottom: 85px;
+    }
+.title__info {
+    padding: 0 130px;
+    font-family: $secondary-font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $primary-gray-color;
+    margin-bottom: 90px;
+}
+.team__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+        
+}
+.team__item {
+    position: relative;
+    width: 380px;
+    
+    &:hover .team__overlay {
+        z-index: 1;
+    }
+}
+.team__images {
+    position: relative;
+    margin-bottom: 30px;
+    transition: all 200ms linear;
+    font-size: 0;
+
+    &:hover {
+        transform: translate(-10px,-10px);
+        box-shadow: 10px 10px 0px 0px $secondary-bg-stack;
+        transition: all 200ms linear;
+    }
+}
+.team__overlay {
+    @include center-flex('all');
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.7) 0%,
+    rgba(243, 129, 129, 8) 100%
+    );
+       z-index: -1;
+    
+}
+.overlay__icon-link {
+    @include center-flex('all');
+    width: 56px;
+    height: 56px;
+    margin-right: 2px;
+    background-color: $primary-accent-color;
+    transition: all 200ms linear;
+    transition-delay: 0.3s;
+
+    &:hover {
+        background: $secondary-accent-color;
+           
+   }
+}
+.overlay__icon {
+    width: 50%;
+    height: 50%;
+    fill: $secondary-accent-color;
+
+    &:hover {
+        fill: $primary-white-color;
+    } 
+}
+
+.team__list-name {
+    @extend %list;
+    text-align: center;
+}
+    
+.team__name {
+    font-family: $main-font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $primary-dark-color;
+    text-transform: uppercase;
+    
+}
+.team__profession {
+    font-family: $secondary-font-stack;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    color: $primary-gray-color;
+    
+}

@@ -1,0 +1,46 @@
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 625px;
+    @extend %list;
+    list-style: none;
+
+    
+      
+}
+.nav-list__item {
+    font-family: $main-font-stack;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.nav-list__link {
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: $primary-white-color;
+    transition: color 200ms linear;
+
+    &:hover:after {
+        position: absolute;
+        display: block;
+        margin: 0 auto;
+        content: "";
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color: $primary-accent-color;
+        margin-top: 12px;
+        transition: all 200ms linear;
+    
+    }
+
+    &:hover,
+    &:focus {
+      color: $primary-accent-color;
+    }
+
+      
+}
+

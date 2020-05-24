@@ -1,0 +1,80 @@
+.servicer__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+}
+.servicer__item {
+    position: relative;
+    display: inline-block;
+    width: 370px;
+    padding-left: 80px;
+    padding-right: 50px;
+    margin-bottom: 90px;
+    margin-right: 20px;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+    &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+    }
+}
+.servicer__soc-icon {
+    &::before {
+        @include pseudo($display: block);
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 20px;
+        left: 20px;
+        background-repeat: no-repeat;
+        fill: #95e1d3;
+    }
+    &--alarm::before {
+        background-image: url(../images/icon/soc-icon/soc-icon-alarm.svg);
+      
+    }
+    &--line::before {
+        background-image: url(../images/icon/soc-icon/soc-icon-line.svg);
+      
+    }
+    &--computer::before {
+        background-image: url(../images/icon/soc-icon/soc-icon-computer.svg);
+      
+    }
+    &--book::before {
+        background-image: url(../images/icon/soc-icon/soc-icon-book.svg);
+      
+    }
+    &--home::before {
+        background-image: url(../images/icon/soc-icon/soc-icon-home.svg);
+      
+    }
+    &--digital::before {
+        background-image: url(../images/icon/soc-icon/soc-icon-digital.svg);
+      
+    }
+}
+  
+.servicer__item-title {
+    font-family: $main-font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $primary-dark-color;
+    
+}
+.servicer__item-text {
+    font-family: $secondary-font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $primary-gray-color;
+    
+}

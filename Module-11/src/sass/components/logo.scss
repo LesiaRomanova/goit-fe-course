@@ -1,0 +1,15 @@
+.logo {
+    font-family: $main-font-stack;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+   
+}
+.logo__link {
+    @extend %link;
+    color: $primary-white-color;
+   
+
+
+} 

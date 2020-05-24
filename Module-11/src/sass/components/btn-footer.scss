@@ -1,0 +1,25 @@
+.btn__footer {
+    display: flex;
+    width: 380px;
+   
+}
+
+.btn__footer-input {
+  font-family: $secondary-font-stack;
+  font-size: 15px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #e5e5e5;
+  width: 230px;
+  outline: none;
+}
+.btn__footer-subscribe {
+  background-color: $secondary-bg-stack;
+  width: 150px;
+  height: 40px;
+  border: none;
+  color: $primary-white-color;
+  text-transform: uppercase;
+  text-align: center;
+  
+}

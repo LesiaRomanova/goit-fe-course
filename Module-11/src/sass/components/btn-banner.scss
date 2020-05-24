@@ -1,0 +1,20 @@
+.btn {
+    font-family: $main-font-stack;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 15px 30px;
+    color: $primary-white-color;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+
+}
+.btn__banner {
+    width: 150px;
+    height: 40px;
+    border: 2px solid $primary-white-color;
+    text-align: center;
+    margin: 0 500px;
+}

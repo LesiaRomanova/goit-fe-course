@@ -1,0 +1,13 @@
+.nav-list__icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    fill: $primary-white-color;
+
+    &:hover {
+      fill: $primary-accent-color;
+      ;
+      transition: all 200ms linear;
+    }
+      
+}
